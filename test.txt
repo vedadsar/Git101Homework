@@ -1,2 +1,56 @@
-TEST
-DEVELOP 
+GIT 101
+
+Šta je git?
+Git je software za verzioniranje koda.
+
+Da li je git == github == bitbucket?
+Ne
+
+Šta je fork?
+Kopija određenog repositorya.
+
+Da li je moguće povući stvari sa forkanog repositorya u naš novi repository?
+Da
+(Zadaća: Kako?)
+
+Šta je branch?
+Branch je kopija fajlova u istom repositoryu.
+
+Standardni nazivi za branch?
+master, develop, feature, hotfix, support, ...
+
+Makro koji se brine o imenovanju brancheva?
+git flow
+(Zadaća: Pročitati git flow koncept)
+
+Kako izgleda jedan git tok za verzioniranje postojećeg neverzioniranog koda?
+1. Kreiramo repository
+2. git init (u folderu sa kodom)
+3. git remote add origin git@github.com/username/repo.git
+4. git add [ime_fajla] ili --all
+5. git commit -am 'VEOMA BITNA PORUKA, KOJA OBJAŠNJAVA ŠTA SMO MI RADILI'
+6. git pull origin [branch]
+6. git push origin [branch]
+
+Koje su moguće greške?
+- ssh key nije OK
+	- generisati ssh key https://help.github.com/articles/generating-ssh-keys/
+	- kopirati ga i paste u github ili ... ssh key polje
+- konflikt u kodu
+	- uporedimo verzije i izbrisemo onaj dio koji ne treba 
+	- <<< HEAD 
+	- ========
+	- 	   >>>
+- uvijek provjeriti trenutnu poziciju 
+- u slučaju potrebe za manual dodavanju remote origina, možemo da uradimo nano /.git/config
+
+Korisne komande:
+- git status (UVIJEK KUCAJTE PRIJE COMMItA I SL.)
+- git stash (Zadaća: Objasniti kako git stash funkcioniše)
+
+Zadaća:
+- Kreirati lokalni Java projekat, dodati ga na github (KROZ KONZOLU) git shell
+- Istražiti Java GUI app -> shell komande
+- Napraviti master, pa iz njega napraviti develop, razvijati develop, a nakon toga, merge develop -> master
+
+
