@@ -64,3 +64,4 @@ Zadaća:
 - Napraviti master, pa iz njega napraviti develop, razvijati develop, a nakon toga, merge develop -> master
 
 
+TEST FOR MERGE BRANCHES
