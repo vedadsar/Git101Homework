@@ -1,4 +1,4 @@
-GIT 101
+﻿GIT 101
 
 Šta je git?
 Git je software za verzioniranje koda.
@@ -12,6 +12,11 @@ Kopija određenog repositorya.
 Da li je moguće povući stvari sa forkanog repositorya u naš novi repository?
 Da
 (Zadaća: Kako?)
+
+/--> Prvo kreiramo nas folder. Zatim dodamo preko terminala remote "git remote add upstream git@github.com:tcelik/git101.git" 
+/--> Zatim pullamo // Koristimo develop branch // git pull origin develop <--/
+
+
 
 Šta je branch?
 Branch je kopija fajlova u istom repositoryu.
@@ -47,6 +52,11 @@ Koje su moguće greške?
 Korisne komande:
 - git status (UVIJEK KUCAJTE PRIJE COMMItA I SL.)
 - git stash (Zadaća: Objasniti kako git stash funkcioniše)
+
+/--> git stash koristimo kada zelimo preci na drugi branch a git nam ne dozvoljava jer na trenutnom branchu imamo 
+necommitanih izmjena. Takodjer mozemo commitati izmjene ali u slucaju da nismo dovrsili kod to ne zelimo pa koristimo
+git stash. <--/
+
 
 Zadaća:
 - Kreirati lokalni Java projekat, dodati ga na github (KROZ KONZOLU) git shell
